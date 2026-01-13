@@ -3,18 +3,12 @@
 GigFlow is a mini freelance marketplace web application where users can register/login, create gigs, browse gigs and submit bids/applications for gigs.  
 This project is developed as part of my **Full Stack Developer Assignment**, where the goal was to build a complete working web application using frontend + backend + database and deploy it online.
 
----
-
-## 🔗 Live Project Links (For Submission)
+##  Live Project Links 
 
 ✅ **Frontend (Vercel):** https://gig-flow-sand.vercel.app  
 ✅ **Backend (Render):** https://gig-flow-licj.onrender.com  
 
-> Note: Render free tier sleeps when inactive. So first request may take 10-50 seconds to respond.
-
----
-
-## 📌 Project Objective (What This Assignment Required)
+## Project Objective (What This Assignment Required)
 
 The main purpose of the assignment was to demonstrate:
 - Full stack development (Frontend + Backend)
@@ -26,7 +20,7 @@ The main purpose of the assignment was to demonstrate:
 
 ---
 
-## ✅ Features Implemented
+##  Features Implemented
 
 ### 1) User Authentication (JWT Based)
 - User can register using:
@@ -37,7 +31,7 @@ The main purpose of the assignment was to demonstrate:
 - JWT token is generated during login
 - JWT token is used for protected actions (like creating a gig / bidding)
 
-📌 Why this is used:
+ Why this is used:
 - JWT helps in secure authentication
 - Only logged-in users can access protected routes
 
@@ -46,7 +40,7 @@ The main purpose of the assignment was to demonstrate:
 ### 2) Gig Management
 A gig is basically a job posting.
 
-✅ Implemented:
+ Implemented:
 - Create Gig (only logged-in user)
 - View all gigs
 - View gig details
@@ -57,10 +51,8 @@ Each gig contains:
 - Budget
 - Posted by user
 
----
-
 ### 3) Bid / Application System
-✅ Implemented:
+ Implemented:
 - Logged in user can apply/bid on gigs
 - Store bid data in MongoDB
 - Bid contains:
@@ -68,8 +60,6 @@ Each gig contains:
   - Message
   - User reference
   - Gig reference
-
----
 
 ### 4) Frontend UI Pages
 Frontend is created as a React SPA.
@@ -82,8 +72,6 @@ Main pages:
 - Signup page
 - Create gig page
 
----
-
 ### 5) Database (MongoDB Atlas)
 Database is hosted on **MongoDB Atlas** (cloud MongoDB).
 
@@ -92,9 +80,7 @@ Used:
 - DB user + password
 - Mongoose models for schema
 
----
-
-## 🛠 Tech Stack Used
+##  Tech Stack Used
 
 ### Frontend
 - React + TypeScript (Vite)
@@ -111,7 +97,7 @@ Used:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 Gig-flow/
 ┣ backend/
 ┃ ┣ src/
@@ -129,9 +115,9 @@ Gig-flow/
 
 ---
 
-# ✅ What Work Was Done (Detailed Explanation)
+#  What Work Was Done 
 
-## ✅ Backend Work (Node + Express + MongoDB)
+##  Backend Work (Node + Express + MongoDB)
 
 ### Step 1: Created Express Server
 I created an Express server that handles API requests from frontend.
@@ -142,7 +128,6 @@ Basic server setup includes:
 - Route handling
 - MongoDB connection using mongoose
 
----
 
 ### Step 2: MongoDB Connection
 MongoDB Atlas cluster connection is done using:
@@ -153,7 +138,6 @@ Used Mongoose to connect like:
 
 This allows the backend server to read/write data in cloud database.
 
----
 
 ### Step 3: Authentication System
 Implemented:
@@ -177,8 +161,6 @@ Created APIs:
 
 Protected API uses JWT middleware to verify user.
 
----
-
 ### Step 5: Bid API
 Created APIs:
 - POST /api/bids (apply/bid)
@@ -186,14 +168,11 @@ Created APIs:
 
 This stores bids in MongoDB.
 
----
 
-# ✅ Frontend Work (React + Vite)
+#  Frontend Work (React + Vite)
 
 ### Step 1: Created React Application using Vite
 Frontend is a Vite React TS project.
-
----
 
 ### Step 2: UI Components and Pages
 Used Tailwind and shadcn UI for clean UI.
@@ -211,12 +190,10 @@ Used Axios to connect frontend to backend APIs.
 
 Base URL is controlled using env variable:
 
-`VITE_API_BASE_URL`
-
+VITE_API_BASE_URL`
 So locally it can be:
 - http://localhost:5000/api
 
 And in deployment it becomes:
-
-https://gig-flow-1icj.onrender.com
+https://gig-flow-licj.onrender.com/api
 

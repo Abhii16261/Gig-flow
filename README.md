@@ -182,8 +182,18 @@ Added pages:
 - Browse gigs
 - Create gig form
 - Gig details
+Environment Variables
 
----
+## Backend (backend/.env)
+
+Create a file named .env inside backend folder.
+backend/.env.example
+
+PORT=5000
+MONGO_URI=
+JWT_SECRET=
+CLIENT_URL=
+NODE_ENV=development
 
 ### Step 3: API Integration
 Used Axios to connect frontend to backend APIs.

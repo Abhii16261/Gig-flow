@@ -5,8 +5,8 @@ This project is developed as part of my **Full Stack Developer Assignment**, whe
 
 ##  Live Project Links 
 
-✅ **Frontend (Vercel):** https://gig-flow-sand.vercel.app  
-✅ **Backend (Render):** https://gig-flow-licj.onrender.com  
+ **Frontend (Vercel):** https://gig-flow-sand.vercel.app  
+ **Backend (Render):** https://gig-flow-licj.onrender.com  
 
 ## Project Objective (What This Assignment Required)
 
